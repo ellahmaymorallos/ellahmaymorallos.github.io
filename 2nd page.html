@@ -1,0 +1,359 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<title>About Us</title>
+<link rel="icon" type="image/x-icon" href="logo.jpg">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="2nd page.css">
+</head>
+
+<body>
+<!-- header start -->
+<header class ="header">
+<!-- logo-->
+<a href="morallos html w css.html" class ="logo">
+<img src="logo.jpg">
+</a>
+
+<!-- nav bar start -->
+<nav class="navbar">
+<input type="checkbox" id="check">
+<label for="check" class= "check-btn">
+<i class="fas fa-bars"></i>
+</label>
+<ul>
+<li><a href="morallos html w css.html">Home</a></li>
+<li><a class= "active" href="2nd page.html">Menu</a></li>
+<li><a href="morallos html w css.html">About Us</a><li>
+</ul>
+<!-- <div id="menu-btn"class="fas fa-bars"></div> -->
+</nav>
+<!--nav bar end-->
+
+<!-- hyperlink with icons (search, cart, profile, menu button) -->
+<div class ="icons">
+<div class="cart-container" onmouseover="showCartForm()" onmouseout="hideCartForm()">
+<a href="4-cart.html">
+<div class ="fas fa-shopping-cart" id="cartButton"></div>
+</a>
+<div class="cart-form" id= "cartForm">
+<form>
+<div id="cartItems"></div>
+<div id="total-price">Total Price: P<span id="totalPrice">0.00</span></div>
+</form>
+</div>
+</div>
+<!-- hyperlink with icons (search, cart, profile, menu button)-->
+</header>
+<!-- header end -->
+
+<!---Menu Section-->
+<section class= "menu" id="menu">
+
+<div class="menu1"><h3>OUR MENU</h3></div>
+
+<p class="heading-description">Have your break with our cute little donuts and savory fries with drinks!</p>
+
+<div class="category-text"><h3>Mini Donuts</h3></div>
+
+<div class="menu">
+<div class="container menu-section">
+
+<!-- product 1 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src= "Donuts Menu.jpg" alt="Chocolate with sprinkles and marshmallows">
+</div>
+<div class="menu-content">
+<h3>Classic 1</h3>
+<p>A delicious chocolate with marsmallow and sprinkles creates a delicious experience in the Classic Chocolate.</p>
+<div onclick="addToCart('Chocolate with sprinkles and marshmallows (3 pcs)','P25.00 Products/No BG/frappe_mocha.png', 'iteml-s'); return false;">
+<button id="itemi-s">3 pcs <span>25.00</span></button> <!-- 3 pcs -->
+</div>
+<div onclick="addToCart('Chocolate with sprinkles and marshmallows (6pcs)','P50.00', 'Products/No BG/frappe_mocha. png','iteml-m'); return false; ">
+<button id="iteml-m">6 pcs <span>P50.e0</span></button> <!--6 pcs-->
+</div>
+<div onclick="addtocart('Chocolate with sprinkles and marshmallows (Dozen)','P95.00', 'Products/No BG/frappe_mocha.png', 'item1-l'); return false;">
+<button id="iteml-1">Dozen <span>p120.00</span></button> <l-- LARRGE ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 2 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="Menu 2.jpg" alt="Classic 2">
+</div>
+<div class="menu-content">
+<h3>Classic 2</h3>
+<p>A blast of freshness is provided by this delicious combination of chocolate and white chocolate with sprinkles and marshmallow.</p>
+<div onclick="addToCart ('Chocolate & white chocolate with sprinkles and marshmallows (3 pcs)', '25.00', 'Products/No BG/frappe_strawberryvanilla.png','item2-s');return false';">
+<button id="item2-s">3 pcs <span>p90.e0</span></button>
+</div>
+<div onclick="addToCart('Chocolate & white chocolate with sprinkles and marshmallows(6 pcs)','P50.00', 'Products/No BG/strawberry-Vanilla.png','item2-m'); return false; ">
+<button id="item2-m">6 pcs <span>P50.00</span></button> <!-- 6 pcs -->
+</div>
+<div onclick="addtocart('Chocolate & white chocolate with sprinkles and marshmallows(Dozen)', 'P95.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item2-l'); return false;">
+<button id="item2-1">Dozen <span>P95.00</span></button> <l-- Dozen ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 3 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="Menu 3.jpg" alt="Classic 3">
+</div>
+<div class="menu-content">
+<h3>Classic 3</h3>
+<p>A blast of freshness is provided by this delicious combination of chocolate and white chocolate.</p>
+<div onclick="addToCart ('Chocolate and white chocolate with sprinkles and powdered sugar (3 pcs)', '25.00', 'Products/No BG/frappe_strawberryvanilla.png','item3-s');return false';">
+<button id="item3-s">3 pcs <span>P 25.00</span></button>
+</div>
+<div onclick="addToCart('Chocolate and white chocolate with sprinkles and powdered sugar  (6 pcs)','P50.00', 'Products/No BG/strawberry-Vanilla. png','item3-m'); return false; ">
+<button id="item3-m">6 pcs <span>p50.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Chocolate and white chocolate with sprinkles and powdered sugar  (Dozen)', 'P95.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item3-l'); return false;">
+<button id="item3-1">Dozen <span>p95.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+</div>
+<div>
+
+<div class="container menu-section">
+<!-⁃ product 4 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="menu 4.jpg" alt="Premium 1">
+</div>
+<div class="menu-content">
+<h3>Premium 1</h3>
+<p>A blast of freshness is provided by this delicious combination of Nutella, Matcha, Caramel with. sliced almonds, crushed oreo, and mini nips</p>
+<div onclick="addToCart ('Nutella,Matcha,Caramel (3pcs)', '30.00', 'Products/No BG/frappe_strawberryvanilla.png','item4-s');return false';">
+<button id="item4-s">3 pcs <span>P30.00</span></button>
+</div>
+<div onclick="addToCart('Nutella,Matcha,Caramel (6 pcs)','P60.00', 'Products/No BG/strawberry-Vanilla. png','item4-m'); return false; ">
+<button id="item4-m">6 pcs <span>P60.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Nutella,Matcha,Caramel  (Dozen)', 'P120.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item4-l'); return false;">
+<button id="item4-l">Dozen <span>P120.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 5 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="menu 5.jpg" alt="Premium 2">
+</div>
+<div class="menu-content">
+<h3>Premium 2</h3>
+<p>A blast of freshness is provided by this delicious combination of Nutella, Matcha, Caramel with. sliced almonds, and crushed oreo</p>
+<div onclick="addToCart ('Nutella,Matcha,Caramel (3pcs)', '30.00', 'Products/No BG/frappe_strawberryvanilla.png','item5-s');return false';">
+<button id="item5-s">3 pcs <span>P30.00</span></button>
+</div>
+<div onclick="addToCart('Nutella,Matcha,Caramel (6 pcs)','P60.00', 'Products/No BG/strawberry-Vanilla. png','item5-m'); return false; ">
+<button id="item5-m">6 pcs <span>P60.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Nutella,Matcha,Caramel  (Dozen)', 'P120.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item5-l'); return false;">
+<button id="item5-l">Dozen <span>P120.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 6 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="menu 6.jpg" alt="Premium 3">
+</div>
+<div class="menu-content">
+<h3>Premium 3</h3>
+<p>A blast of freshness is provided by this delicious combination of Nutella, Matcha, Caramel with sliced almonds, and mini nips</p>
+<div onclick="addToCart ('Nutella,Matcha,Caramel (3pcs)', '30.00', 'Products/No BG/frappe_strawberryvanilla.png','item6-s');return false';">
+<button id="item6-s">3 pcs <span>P30.00</span></button>
+</div>
+<div onclick="addToCart('Nutella,Matcha (6 pcs)','P60.00', 'Products/No BG/strawberry-Vanilla. png','item6-m'); return false; ">
+<button id="item6-m">6 pcs <span>P60.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Nutella,Matcha,Caramel  (Dozen)', 'P120.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item6-l'); return false;">
+<button id="item6-l">Dozen <span>P120.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+</div>
+<!-- Add more menu items here with the same structure -->
+
+
+<p class="heading-description">Chug Fries and Donut Babies offer an addictive potato fries that comes with a refreshing drinks. Our product is basically fries made out of potatoes seasoned with different flavors dipped in mayonnaise or ketchup. A variety of flavors are salted, barbeque, sour cream, and cheese. This product is best for people who love eating fries or finger food with matching drinks.</p>
+
+<div class="category-text"><h3>Fries with drinks</h3></div>
+
+<div class="container menu-section">
+
+<!-⁃ product 1 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="c1 f.jpg" alt="C1">
+</div>
+<div class="menu-content">
+<h3>Fries with drink</h3>
+<p>A crisp of freshness is provided by this delicious and sovory combination of fries with drink</p>
+<div onclick="addToCart ('Fries with drink (Small)', '35.00', 'Products/No BG/frappe_strawberryvanilla.png','item1-s');return false';">
+<button id="item5-s">Small <span>P35.00</span></button>
+</div>
+<div onclick="addToCart('Nutella,Matcha,Caramel (Medium)','P65.00', 'Products/No BG/strawberry-Vanilla. png','item1-m'); return false; ">
+<button id="item5-m">Medium <span>P65.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Nutella,Matcha,Caramel  (Large)', 'P95.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item1-l'); return false;">
+<button id="item5-l">Large <span>P95.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 2 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="c2.jpg" alt="C2">
+</div>
+<div class="menu-content">
+<h3>Fries and cheesetick with drink</h3>
+<p>A crisp of freshness is provided by this delicious and sovory combination of fries and cheesetick with drink</p>
+<div onclick="addToCart ('Fries and cheesetick with drink (Small)', '45.00', 'Products/No BG/frappe_strawberryvanilla.png','item2-s');return false';">
+<button id="item2-s">Small <span>P45.00</span></button>
+</div>
+<div onclick="addToCart('Fries and cheesetick with drink(Medium)','P75.00', 'Products/No BG/strawberry-Vanilla. png','item2-m'); return false; ">
+<button id="item2-m">Medium <span>P65.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Fries and cheesetick with drink(Large)', 'P105.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item2-l'); return false;">
+<button id="item2-1">Large <span>p105.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+
+
+<!-⁃ product 3 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="c3.jpg" alt="C3">
+</div>
+<div class="menu-content">
+<h3>Fries and hotdog with drink</h3>
+<p>A crisp of freshness is provided by this delicious and sovory combination of fries and hotdog with drink.</p>
+<div onclick="addToCart ('>Fries and hotdog with drink (Small)', '45.00', 'Products/No BG/frappe_strawberryvanilla.png','item3-s');return false';">
+<button id="item3-s">Small <span>P45.00</span></button>
+</div>
+<div onclick="addToCart('>Fries and hotdog with drink (Medium)','P75.00', 'Products/No BG/strawberry-Vanilla. png','item3-m'); return false; ">
+<button id="item3-m">Medium <span>P75.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('>Fries and hotdog with drink(Large)', 'P105.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item3-l'); return false;">
+<button id="item3-1">Large <span>P105.00</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+</div>
+
+<div class="container menu-section">
+<!-⁃ product 4 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="c4.jpg" alt="C4">
+</div>
+<div class="menu-content">
+<h3>Fries and siomai with drink</h3>
+<p>A crisp of freshness is provided by this delicious and sovory combination of fries and siomai with drink</p>
+<div onclick="addToCart ('Fries and siomai with drink (Small)', '45.00', 'Products/No BG/frappe_strawberryvanilla.png','item4-s');return false';">
+<button id="item4-s">Small <span>P45.00</span></button>
+</div>
+<div onclick="addToCart('Fries and siomai with drink(Medium)','P75.00', 'Products/No BG/strawberry-Vanilla.png','item4-m'); return false; ">
+<button id="item4-m">Medium <span>P75.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Fries and siomai with drink (Large)', 'P105.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item4-l'); return false;">
+<button id="item4-l">Large <span>P105.000</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 5 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="c5.jpg" alt="C5">
+</div>
+<div class="menu-content">
+<h3>Fries and siomai and hotdog with drink</h3>
+<p>A crisp of freshness is provided by this delicious and sovory combination of fries and siomai and hotdog with drink.</p>
+<div onclick="addToCart ('Fries and siomai and hotdog with drink (Small)', '55.00', 'Products/No BG/frappe_strawberryvanilla.png','item5-s');return false';">
+<button id="item5-s">Small <span>P55.00</span></button>
+</div>
+<div onclick="addToCart('Fries and siomai and hotdog with drink(Medium)','P85.00', 'Products/No BG/strawberry-Vanilla.png','item5-m'); return false; ">
+<button id="item5-m">Medium <span>P85.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Fries and siomai and hotdog with drink (Large)', 'P115.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item5-l'); return false;">
+<button id="item5-l">Large <span>P115.000</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+
+<!-⁃ product 6 -->
+<div class="menu-box">
+<div class="menu-img">
+<img src="c6.jpg" alt="C6">
+</div>
+<div class="menu-content">
+<h3>Fries and cheesetick and hotdog with drink</h3>
+<p>A crisp of freshness is provided by this delicious and sovory combination of fries and cheesetick and hotdog with drink.</p>
+<div onclick="addToCart ('Fries and cheesetick and hotdog with drink(Small)', '55.00', 'Products/No BG/frappe_strawberryvanilla.png','item6-s');return false';">
+<button id="item6-s">Small <span>P55.00</span></button>
+</div>
+<div onclick="addToCart('Fries and cheesetick and hotdog with drink(Medium)','P85.00', 'Products/No BG/strawberry-Vanilla.png','item6-m'); return false; ">
+<button id="item6-m">Medium <span>P85.00</span></button> <!-- MEDIUM -->
+</div>
+<div onclick="addtocart('Fries and cheesetick and hotdog with drink (Large)', 'P115.00', 'Products/No BG/frappe-strawberry-Vanilla.png', 'item6-l'); return false;">
+<button id="item6-l">Large <span>P115.000</span></button> <l-- LARGE ->
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section End -->
+
+
+<!-- footer start -->
+<section class="footer">
+
+
+<div class="container">
+<div class="footer-box-1">
+<h3> Location </h3>
+<div class="footer-loc">
+<a href="https://www.google.com/maps/dir//College+of+Industrial+Technology,+660.+TUP,+Ermita,+Manila,+1000/@14.5873793,120.9024456,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3397cb93cd451575:0x6247d293ffefede0!2m2!1d120.9848474!2d14.5873937?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" target=_blank>College of Industrial Technology, 660 Ermita, Manila, 1000</a>
+</div>
+</div>
+<div class="footer-box">
+<h3>Newsletter</h3>
+<p>Stay update with our latest</p>
+<form>
+<input type="email" name="email" placeholder="name@gmail.com">
+<button type="submit"><i class="fa-solid fa-right-long"></i></button>
+</form>
+</div>
+
+
+<div class="footer-box">
+<h3>Contact Us</h3>
+<p>Connect With Us On:</p>
+<div class="icons">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-twitter"></i></a>
+</div>
+
+</div>
+</div>
+</section>
+<!-- footer end -->
+<script src="2-menu.js"></script>
+</body>
+</html>
